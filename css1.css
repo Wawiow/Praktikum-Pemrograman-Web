@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "mohave";
+
+}
+
+/* Gaya untuk header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #666;
+  padding: 15px 20px;
+}
+
+.logo {
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background: gray;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+main {
+  text-align: center;
+  padding: 50px 20px;
+  background: black;
+  color: white;
+  height: 50vh;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Tombol Sign Up */
+.signup-button {
+  display: inline-block;
+  background: orange;
+  color: blue;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.signup-button:hover {
+  background: #ff8800;
+  transition: 0.3s;
+}
+
+
+.review-section {
+  background: #d46002; /* Warna orange */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stars {
+  font-size: 18px;
+  color: gold;
+}
+
+.review-text {
+  font-size: 16px;
+}
+
+.review-slider {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  background: lightgray;
+  border-radius: 3px;
+}
+
+.indicator.active {
+  background: white;
+}
+/* Tombol Sign Up */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 50px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-text {
+  width: 50%;
+  z-index: 2;
+}
+
+.about-video {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.about-video video {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Background miring */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 50px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-text {
+  width: 50%;
+  z-index: 2;
+}
+
+.about-video {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.about-video video {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Background miring */
+.background-left, .background-right {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0;
+}
+
+.background-left {
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  background: black;
+
+  opacity: 0.75;
+}
+
+.background-right {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px; /* Atur ukuran sesuai kebutuhan */
+    height: 50px;
+    background: black; /* Warna oranye */
+    opacity: 0.8;
+    z-index: 1; /* Kotak berada di bawah elemen lain */
+}
+
+.background-right2 {
+
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px; /* Atur ukuran sesuai kebutuhan */
+    height: 50px;
+    background: #d66a1f; /* Warna oranye */
+    z-index: 1; /* Kotak berada di bawah elemen lain */
+}
+
+/* Feature */
+.features-header {
+  color: orange;
+  background-color: #000;
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.features {
+  background-color: #000;
+  padding: 60px 20px;
+}
+
+.features h2 {
+  color: #f60;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: white;
+  border-top: 4px solid #f60;
+  padding: 20px;
+  height: 100%;
+}
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #f60;
+  font-size: 1.5rem;
+}
+
+.gameplay-icon, .visual-icon, .dunia-icon, .mode-icon, .event-icon, .komunitas-icon {
+  position: relative;
+}
+
+.feature-card h3 {
+  color: #f60;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  margin-bottom: 15px;
+  color: black;
+}
+
+.feature-card ul li {
+  color: black;
+}
+
+
+/* Testimonial */
+.testimonial-head h2{
+  display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.testimonials {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 60px 20px;
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 0 auto 15px;
+}
+
+.testimonial-card h4 {
+  margin-bottom: 5px;
+}
+
+.user-rating {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+/* FAQ */
+.faq {
+  background-color: #000;
+  padding: 60px 20px;
+  
+}
+
+.faq h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-list {
+  max-width: 1200px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #ccc;
+}
+
+/* Pre reg */
+.pre-register {
+  background: linear-gradient(90deg, white 55%,  #DC5F00 45%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 50px;
+}
+
+.pre-register-content {
+  flex: 2;
+}
+
+.pre-register-content h2 {
+  text-align: left;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.pre-register-content p {
+  color: #fff;
+  max-width: 70%;
+}
+
+.pre-register-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  max-width: 200px;
+  border: 2px solid #fff;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f60;
+}
+
+.footer-section i {
+  margin-right: 10px;
+  color: #f60;
+}
