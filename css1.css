@@ -39,6 +39,7 @@ nav ul li a {
   border-radius: 5px;
 }
 
+/* Halaman utama */
 main {
   text-align: center;
   padding: 50px 20px;
@@ -74,9 +75,9 @@ p {
   transition: 0.3s;
 }
 
-
+/* Review */
 .review-section {
-  background: #d46002; /* Warna orange */
+  background: #d46002; 
   color: white;
   text-align: center;
   padding: 15px 0;
@@ -200,11 +201,11 @@ p {
   position: absolute;
     bottom: 0;
     right: 0;
-    width: 150px; /* Atur ukuran sesuai kebutuhan */
+    width: 150px; 
     height: 50px;
-    background: black; /* Warna oranye */
+    background: black; 
     opacity: 0.8;
-    z-index: 1; /* Kotak berada di bawah elemen lain */
+    z-index: 1; 
 }
 
 .background-right2 {
@@ -212,10 +213,10 @@ p {
   position: absolute;
     bottom: 0;
     right: 0;
-    width: 150px; /* Atur ukuran sesuai kebutuhan */
+    width: 150px; 
     height: 50px;
-    background: #d66a1f; /* Warna oranye */
-    z-index: 1; /* Kotak berada di bawah elemen lain */
+    background: #d66a1f; 
+    z-index: 1; 
 }
 
 /* Feature */
@@ -412,10 +413,12 @@ p {
 .pre-register-btn {
   background-color: #000;
   color: #fff;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  max-width: 200px;
+  padding: 12px 24px;
+  font-size: 1rem;
   border: 2px solid #fff;
+  border-radius: 8px;
+  width: auto; 
+  min-width: 140px;
 }
 
 /* Footer */
@@ -459,4 +462,125 @@ footer {
 .footer-section i {
   margin-right: 10px;
   color: #f60;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .signup-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* bagian testimonial */
+@media (max-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Bagian vidio */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-video {
+    width: 100%;
+  }
+
+  .about-video {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .about-video video {
+    width: 90%;
+  }
+}
+
+
+/* Bagian benefit */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* pre reg */
+@media (max-width: 768px) {
+  .pre-register {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .pre-register .content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .register-box {
+    width: 100%;
+  }
+
+  .register-btn {
+    width: auto;
+  }
+}
+
+/* Bagian footer */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
 }
